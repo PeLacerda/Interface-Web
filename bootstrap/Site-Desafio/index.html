@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Imagem e texto -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Bootstrap
+  </a>
+</nav>
+
+<div class="container">
+     <div class="row">
+            <div class="col-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Ativo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Desativado</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <h3>Bootstrap — Guia Completo para Iniciantes e Desenvolvedores Intermediários</h3>
+                <p>
+                    Bootstrap é um framework front-end amplamente utilizado para o desenvolvimento de sites e aplicações web responsivas. Criado inicialmente pelo Twitter, ele foi projetado para acelerar o processo de desenvolvimento e garantir consistência visual entre diferentes páginas e dispositivos. O principal objetivo do Bootstrap é fornecer um conjunto robusto de ferramentas que incluem estilos prontos em CSS, componentes interativos em JavaScript e um sistema de grid responsivo que facilita a organização do layout. Com ele, é possível criar interfaces modernas sem a necessidade de escrever todo o código do zero, o que economiza tempo e reduz a probabilidade de erros de estilo.
+
+                    A instalação do Bootstrap pode ser feita de diferentes formas, sendo as mais comuns o uso via CDN, que é rápido e prático para protótipos, a instalação via NPM, ideal para projetos com ferramentas de build, e o download dos arquivos compilados para uso offline. Ao utilizar a versão por CDN, basta incluir um link no <head> do documento HTML para o CSS e outro para o JavaScript, que já inclui o Popper, necessário para alguns componentes. No caso do NPM, a instalação se integra facilmente a projetos com Webpack, Vite ou Parcel, permitindo importar apenas os módulos necessários, o que reduz o tamanho final do arquivo.
+                    
+                    O sistema de grid do Bootstrap é um dos seus pilares mais importantes. Baseado em 12 colunas, ele permite criar layouts flexíveis e responsivos, adaptando o conteúdo a diferentes tamanhos de tela. As classes seguem uma nomenclatura baseada em breakpoints, como .col-sm-, .col-md-, .col-lg- e assim por diante, que definem o comportamento das colunas em resoluções específicas. Isso torna simples criar páginas que se reorganizam automaticamente em dispositivos móveis, tablets e desktops sem precisar escrever regras CSS complexas.
+                    
+                    Além do grid, o Bootstrap oferece uma vasta gama de classes utilitárias, conhecidas como utilities, que ajudam a aplicar espaçamentos, cores, alinhamentos e outros ajustes visuais de forma rápida. Por exemplo, classes como .p-3 aplicam padding, .m-2 definem margin, .text-center centraliza textos e .bg-primary aplica a cor principal definida pelo tema. Essas utilidades permitem prototipar rapidamente, eliminando a necessidade de criar CSS personalizado para ajustes simples.
+                    
+                    Os componentes prontos também são um grande atrativo. Entre os mais utilizados estão botões, formulários, barras de navegação, modais, alertas, cards e carrosséis. Esses elementos já vêm estilizados e, em muitos casos, com interatividade pronta via JavaScript. Isso significa que, por exemplo, um modal pode ser implementado apenas com a marcação HTML e a adição de alguns atributos, sem que seja necessário escrever scripts adicionais.
+                    
+                    Outro ponto forte do Bootstrap é a possibilidade de personalização. Ele oferece variáveis em CSS e SCSS que permitem ajustar cores, tipografia, tamanhos e outros aspectos do design de forma global. Ao trabalhar com SCSS, é possível importar apenas os módulos que serão usados no projeto, resultando em um arquivo final mais leve. Essa abordagem modular também facilita a manutenção, pois qualquer alteração nas variáveis se reflete automaticamente em todos os componentes que as utilizam.
+                    
+                    A acessibilidade é um aspecto importante no Bootstrap. Muitos componentes já incluem atributos ARIA e padrões que ajudam usuários com deficiências visuais ou motoras. No entanto, cabe ao desenvolvedor garantir que o conteúdo seja semanticamente correto, que haja contraste suficiente entre texto e fundo, e que todos os elementos possam ser utilizados via teclado. Formulários, por exemplo, devem sempre ter rótulos associados aos campos para que leitores de tela possam interpretá-los corretamente.
+                    
+                    Quando o assunto é desempenho, é recomendável carregar apenas os recursos necessários. Isso pode ser feito utilizando a versão personalizada via SCSS ou removendo módulos não utilizados. Também é importante minificar e comprimir os arquivos, além de ativar cache no servidor para evitar downloads repetidos. O uso de imagens otimizadas e a eliminação de scripts desnecessários também contribuem para um carregamento mais rápido.
+                    
+                    Por fim, o Bootstrap é extremamente versátil e se integra bem com outras bibliotecas e frameworks JavaScript, como React, Vue e Angular. Existem até versões adaptadas, como o React-Bootstrap, que converte componentes em elementos React puros, mantendo toda a estética e funcionalidades do framework original. Isso permite que desenvolvedores aproveitem o poder do Bootstrap em diferentes ecossistemas sem abrir mão de boas práticas e organização de código.
+                    
+                    Em resumo, o Bootstrap continua sendo uma das ferramentas mais eficientes para desenvolver interfaces web rápidas, responsivas e consistentes. Sua combinação de sistema de grid, classes utilitárias, componentes prontos e opções de personalização o torna útil tanto para iniciantes, que encontram nele um caminho mais simples para começar, quanto para profissionais experientes, que podem agilizar o desenvolvimento de projetos complexos. Ao adotar o Bootstrap, o desenvolvedor ganha produtividade, reduz o tempo de entrega e mantém um padrão visual coerente, o que é essencial em projetos de qualquer porte.
+                </p>
+            </div>
+            <div class="col-3">
+                
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
