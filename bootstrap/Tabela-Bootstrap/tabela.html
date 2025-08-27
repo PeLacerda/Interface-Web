@@ -14,9 +14,19 @@
 
   <style>
 
+    .container {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+      height: 100vh; 
+      width: 100%;
+    }
+
     table, form {
       margin-top: 3%;
     }
+
 
   </style>
 
@@ -25,20 +35,23 @@
 
 <body>
 
+
+
   <!-- Imagem e texto -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="./img/Apple-Logo.png" width="50" height="30" class="d-inline-block align-top" alt="">
-    Apple
-  </a>
-</nav>
-
-<!-- Search -->
-
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./img/Apple-Logo.png" width="50" height="30" class="d-inline-block align-top" alt="">
+      Apple
+    </a>
+  </nav>
+  
+  <!-- Search -->
+  
+<div class="container">
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Consultarr</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Consulte aqui">
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
@@ -52,6 +65,7 @@
         <th scope="col">Tipo</th>
         <th scope="col">Lançamento</th>
         <th scope="col">Preço</th>
+        <th scope="col">Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -60,26 +74,27 @@
         <td>Celular</td>
         <td>2025</td>
         <td>R$ 4999,50</td>
-        <td><button type="button" class="btn btn-danger">Excluir</button> </td>
-        <td><button type="button" class="btn btn-warning">Alterar</button></td>
+        <td><button type="button" class="btn btn-danger">Excluir</button>   
+        <button type="button" class="btn btn-warning">Alterar</button></td>
       </tr>
       <tr>
         <th scope="row">Macbook  Air 13</th>
         <td>Nootebook</td>
         <td>2025</td>
         <td>R$ 7500,00</td>
-          <td><button type="button" class="btn btn-danger">Excluir</button></td>
-          <td><button type="button" class="btn btn-warning">Alterar</button></td>
+          <td><button type="button" class="btn btn-danger">Excluir</button>
+          <button type="button" class="btn btn-warning">Alterar</button></td>
       </tr>
       <tr>
         <th scope="row">Ipad pro m4</th>
         <td colspan="2">2024</td>
         <td>R$ 8000,00</td>
-        <td><button type="button" class="btn btn-danger">Excluir</button></td>
-        <td><button type="button" class="btn btn-warning">Alterar</button></td>
+        <td><button type="button" class="btn btn-danger">Excluir</button>
+        <button type="button" class="btn btn-warning">Alterar</button></td>
       </tr>
     </tbody>
   </table>
+</div>
 
 </body>
 </html>
