@@ -1,0 +1,54 @@
+body {
+      background: linear-gradient(135deg, #ff6ec4, #7873f5, #4ade80);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .card-cadastro {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 700px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+
+    .card-cadastro h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .form-control, .form-select {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .form-control::placeholder {
+      color: #ddd;
+    }
+
+    .form-check-label {
+      color: #f1f1f1;
+    }
+
+    .btn-cadastro {
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border: none;
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-cadastro:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
