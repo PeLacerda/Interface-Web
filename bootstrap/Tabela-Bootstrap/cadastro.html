@@ -23,16 +23,22 @@
 
   <!-- Cadastro -->
 
+<div class="container">
   <form>
       <div class="row g-3">
         <div class="col-md-6">
+          Nome:
           <input type="text" class="form-control" placeholder="Digite seu nome">
         </div>
         <div class="col-md-6">
+          E-mail:
           <input type="email" class="form-control" placeholder="Digite seu e-mail">
         </div>
-        <div class="col-md-4">
-          <input type="text" class="form-control" placeholder="CEP">
+        <div class="col-md-4"> 
+          <div class="input-group mb-3">            
+          <span class="input-group-text" id="basic-addon1">CEP</span>
+          <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
         </div>
         <div class="col-md-4">
           <input type="text" class="form-control" placeholder="Digite sua cidade">
@@ -67,6 +73,6 @@
           <button type="submit" class="btn btn-cadastro">Cadastrar</button>
         </div>
       </div>
-
+    </div>
 </body>
 </html>
