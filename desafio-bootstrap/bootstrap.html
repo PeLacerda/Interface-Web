@@ -9,26 +9,41 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
   <link type="png" rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/512px-Xiaomi_logo_%282021-%29.svg.png">
   <title>Bootstrap</title>
+
+  <style>
+    
+    .nav-link {
+      color: white;
+    }
+
+    .nav-link:hover {
+      color: orange;
+    }
+
+  </style>
+
 </head>
 <body>
 
-  <!-- Nav-Bar-Bootstrap -->
+  <!-- Nav-Bar-Aberta -->
 
 <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
   <div class="bg-dark p-4">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
       </ul>
   </div>
 </div>
+
+<!-- Nav-Bar -->
 
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
@@ -40,6 +55,39 @@
     </div>
   </div>
 </nav>
+
+
+<!-- Search -->
+
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      Consultar
+    </div>
+  
+  <div class="row">
+
+    <div class="col-3">
+      <button type="button" class="btn btn-success">Success</button>
+    </div>
+
+    <div class="col-6  ">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+        <span >
+          <button type="submit" class="input-group-text" id="basic-addon1">Enviar</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-3">
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
 
 </body>
 </html>
