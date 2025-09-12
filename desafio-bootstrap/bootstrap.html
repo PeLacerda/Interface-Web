@@ -20,6 +20,14 @@
       color: orange;
     }
 
+    .container {
+      margin-top: 5%;
+    }
+
+    .card-header {
+      color: white;
+    }
+
   </style>
 
 </head>
@@ -60,28 +68,24 @@
 <!-- Search -->
 
 <div class="container">
-  <div class="card text-center">
+  <div class="card text-center bg-dark">
     <div class="card-header">
       Consultar
     </div>
-  
+  <br>
   <div class="row">
-
-    <div class="col-3">
-      <button type="button" class="btn btn-success">Success</button>
+    <br><br>
+    <div class="col-4">
+      <button type="button" class="btn btn-success" style="width: 200px;">Success</button>
     </div>
 
-    <div class="col-6  ">
+    <div class="col-7">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
-        <span >
-          <button type="submit" class="input-group-text" id="basic-addon1">Enviar</button>
-        </span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" data-bs-theme="dark"/>
+        <button type="button" class="btn btn-primary">Primary</button>
       </div>
     </div>
 
-    <div class="col-3">
-    </div>
   </div>
 
   </div>
